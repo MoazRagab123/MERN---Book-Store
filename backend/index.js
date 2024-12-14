@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const app = express();
 
 app.get('/',(req,res)=>{
- res.send('Welome to the home page');
+ res.send('Hello from homepage');  
 });
 
 mongoose.connect(mongoDBURL)
