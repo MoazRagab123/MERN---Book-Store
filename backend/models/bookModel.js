@@ -1,4 +1,4 @@
-const mongoose = require ('mongoose');
+import mongoose from "mongoose";
 
 // Define the Schema
 const bookSchema = new mongoose.Schema(
@@ -22,6 +22,5 @@ const bookSchema = new mongoose.Schema(
 );
 
 //Create the model
- const Book = mongoose.model('Book',bookSchema);
+export const Book = mongoose.model('Book',bookSchema);
 
-module.exports = bookSchema;
